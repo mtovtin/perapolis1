@@ -1,0 +1,168 @@
+<html style="height: 100%;">
+<header>
+  <nav style="position:absolute; margin-top: -20px; background-color: rgba(0, 0, 0, 1);"
+    class="navbar  navbar-fixed-top navbar-dark">
+    <div>
+
+      <span id="bg" style="position:absolute; right:40px; top:40px" (click)="toggleNavbar()">
+        <img id="menu_icon" src='assets/images/Menu Icon1.png'>
+      </span>
+    </div>
+
+    <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }">
+      <ul class="navbar-nav mr-auto">
+ 
+        <li style="margin-top: 100px;" class="nav-item">
+          <a class="nav-link" href="about-component" style="color: #6667AB;">ABOUT</a>
+          <div class="hor"></div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="gt-component" style="color: #6667AB;">THE GOLDEN THREAD</a>
+          <div class="hor"></div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="services-component" style="color: #6667AB;">SERVICES</a>
+          <div class="hor"></div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio-component" style="color: #6667AB;">PORTFOLIO</a>
+          <div class="hor"></div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="blog-component" style="color: #6667AB;">OUR VIEWPOINT</a>
+          <div class="hor"></div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact-component" style="color: #6667AB;">CONTACT</a>
+        </li>
+        <li class="nav-item other">
+          <a class="nav-link" href="#">FAQ</a>
+          <a class="nav-link" href="#">PRIVACY POLICY</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+
+
+<body [ngClass]="status ? 'blur-on' : 'blur-off'">
+  <div [ngClass]="status ? 'pd' : 'pd-off'">
+    <div style="background-color: #6667AB;">
+
+      <div id="logo"><a  href="home-component"><img src='assets/images/Logob.png'></a></div>
+
+      <!-- <div id="menu_icon"><img src='/../assets/images/Menu Icon.png'></div> -->
+
+
+      <div id="contact">contact us</div>
+      <div id="socials">
+        <div>
+          <img src='assets/images/Feather.png'>
+        </div>
+        <div>
+          <img src='assets/images/Feather1.png'>
+        </div>
+        <div>
+          <img src='assets/images/Feather3.png'>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container" style="padding-left: 7%; padding-right:7%; padding-top: 400px;">
+      <span id='av'>
+        AVAVAV
+      </span>
+      <span id='year'>
+        2022
+      </span>
+      <div style="text-align: center; " id='posuere'>
+        <img src='assets/images/posuere.png'>
+      </div>
+      <div class="row">
+        <div class="subtitle col-md-4 col-lg-4 col-xs-12" style=" display: inline-block;">
+          The Brief
+        </div>
+        <div class="txt col-md-8 col-lg-8 col-xs-12">
+          We worked with a leading brand, AVAVAV and launched ‘Squeeze The Day’, a major campaign celebrating the power
+          of the brand’s products in everyday life – encouraging people of all ages and from all walks of life to
+          ‘Squeeze The Day’.
+        </div>
+      </div>
+      <div class="row">
+        <div class="rt col-12" style=" display: inline-block;">
+          “I really enjoyed working with AVAVAV on the launch of ‘Squeeze The Day’. I love how accessible AVAVAV is and
+          how it fits into my daily routine so easily with such a fun!”
+        </div>
+        <div class="rt1 col-12">
+          Emily Dickens, AVAVAV ambassador </div>
+      </div>
+      <div class="row" style="margin-bottom:40px;">
+        <div class="subtitle col-md-4 col-lg-4 col-xs-12">
+          What We
+          Did
+        </div>
+        <div class="txt col-md-8 col-lg-8 col-xs-12">
+          Amet luctus venenatis lectus magna fringilla urna porttitor rhoncus. In hendrerit gravida rutrum quisque non.
+          Tortor consequat id porta nibh venenatis cras sed. Enim ut tellus elementum sagittis. Diam sollicitudin tempor
+          id eu nisl nunc mi. Nisl rhoncus mattis rhoncus urna neque viverra justo. At tellus at urna condimentum
+          mattis. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper. Ac turpis egestas
+          integer eget aliquet nibh praesent tristique. Libero nunc consequat interdum varius. Fermentum posuere urna
+          nec tincidunt praesent semper feugiat nibh. Odio pellentesque diam volutpat commodo sed egestas egestas. At
+          ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Faucibus interdum posuere lorem ipsum dolor
+          sit amet consectetur adipiscing.
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 col-lg-4 col-xs-12">
+        </div>
+        <div class="col-md-8 col-lg-8 col-xs-12">
+
+
+
+        </div>
+      </div>
+      <div class=" row">
+        <div class='l col-md-12 col-lg-4 col-xs-12'>
+          <div class='pr'>970%</div>
+          <div class="rp">Engagement rate above industry standard</div>
+        </div>
+        <div class="l f col-md-12 col-lg-4 col-xs-12">
+          <div class='pr'>+651%</div>
+          <div class="rp">Engagement rate above industry standard</div>
+        </div>
+        <div class=" col-md-12 col-lg-4 col-xs-12">
+          <div class='pr'>x4</div>
+          <div class="rp">Increase in website traffic from social </div>
+        </div>
+      </div>
+      <div style="text-align: center; margin: auto; margin-left: -5%; ">
+
+        <div id="s">
+          <img src='assets/images/1.png'>
+        </div>
+
+        <div id="ss">
+          <img src='assets/images/1.png'>
+        </div>
+
+        <div id="d"></div>
+      </div>
+
+
+
+
+    </div>
+
+  </div>
+  <div style="font-size: 12px; color: white; font-family: 'Public Sans'; text-align: center; padding-bottom: 40px;">© 2022 PERAPOLIS</div>
+</body>
+
+</html>

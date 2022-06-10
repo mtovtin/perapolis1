@@ -1,0 +1,7 @@
+#pic1{
+  transition: all .2s ease-in-out;
+}
+
+#pic1 {
+  transform: scale(1.5);
+}

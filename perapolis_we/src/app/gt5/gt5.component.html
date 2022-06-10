@@ -1,0 +1,320 @@
+<html style="height: 100%;">
+<header>
+  <nav style="position:absolute; margin-top: -20px; background-color: rgba(0, 0, 0, 1);" class="navbar  navbar-dark">
+    <div>
+
+      <span id="bg" style="position:absolute; right:40px; top:40px" (click)="toggleNavbar()">
+        <img id="menu_icon" src='assets/images/Menu Icon1.png'>
+      </span>
+    </div>
+
+    <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }">
+      <ul class="navbar-nav mr-auto">
+  
+        <li style="margin-top: 100px;" class="nav-item">
+          <a class="nav-link" href="about-component" style="color: #6667AB;">ABOUT</a>
+          <div class="hor"></div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="gt-component" style="color: #6667AB;">THE GOLDEN THREAD</a>
+          <div class="hor"></div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="services-component" style="color: #6667AB;">SERVICES</a>
+          <div class="hor"></div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio-component" style="color: #6667AB;">PORTFOLIO</a>
+          <div class="hor"></div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="blog-component" style="color: #6667AB;">OUR VIEWPOINT</a>
+          <div class="hor"></div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact-component" style="color: #6667AB;">CONTACT</a>
+        </li>
+        <li class="nav-item other">
+          <a class="nav-link" href="#">FAQ</a>
+          <a class="nav-link" href="#">PRIVACY POLICY</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+
+
+<body [ngClass]="status ? 'blur-on' : 'blur-off'">
+  <div [ngClass]="status ? 'pd' : 'pd-off'">
+  <div style="background-color: #E0E7ED;">
+
+    <div id="logo"><a  href="home-component"><img src='assets/images/Logop.png'></a></div>
+    <div id="subtitle">A formula for a brand's successful strategic path within the luxury multiverse.</div>
+    <!-- <div id="menu_icon"><img src='/../assets/images/Menu Icon.png'></div> -->
+    <div id="st">
+    <div id="wrapper">
+      <div id="inp" style="margin-top: 200px; margin-bottom: 20px; color: black; font-family: 'Hatton Medium';">INPUT 5</div>
+      <div id="inp1"
+        style="margin-top: -20px;color: black;  margin-bottom:30px; font-family: 'Public sans'; font-weight: lighter;">
+        Who are your main clients?</div>
+      <div class="btn-group-vertical">
+        <div><button (click)="goToNext('Female')" type="button" class="btn btn-default">Female</button></div>
+        <div> <button (click)="goToNext('Male')" type="button" class="btn btn-default">Male</button></div>
+        <div> <button (click)="goToNext('All')" style="margin-bottom: 200px;" type="button" class="btn btn-default">All</button></div>
+
+</div>
+      </div>
+
+    </div>
+
+    <div id="contact">contact us</div>
+    <div id="socials">
+      <div>
+        <img src='assets/images/Feather.png'>
+      </div>
+      <div>
+        <img src='assets/images/Feather1.png'>
+      </div>
+      <div>
+        <img src='assets/images/Feather3.png'>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div style="font-size: 12px; color: white; font-family: 'Public Sans'; text-align: center; padding-bottom: 40px;">© 2022 PERAPOLIS</div>
+</body>
+
+</html>
+
+
+
+
+<!-- <html style="height: 100%;">
+<header>
+  <nav style="position:absolute; margin-top: -20px; background-color: rgba(0, 0, 0, 1);" class="navbar  navbar-dark">
+    <div>
+
+      <span style="position:fixed; right:40px; top:40px" (click)="toggleNavbar()">
+        <img id="menu_icon" src='/../assets/images/Menu Icon.png'>
+      </span>
+    </div>
+
+    <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: #6667AB;"><img style="width: 30vw;" src='/../assets/images/Logow.png'></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about-component" style="color: #6667AB;">ABOUT</a>
+          <div class="hor"></div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/gt-component" style="color: #6667AB;">THE GOLDEN THREAD</a>
+          <div class="hor"></div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/services-component" style="color: #6667AB;">SERVICES</a>
+          <div class="hor"></div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: #6667AB;">PORTFOLIO</a>
+          <div class="hor"></div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: #6667AB;">CONTACT</a>
+        </li>
+        <li class="nav-item other">
+          <a class="nav-link" href="#">FAQ</a>
+          <a class="nav-link" href="#">PRIVACY POLICY</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+
+
+<body>
+
+  <div style="background-color: #E0E7ED;">
+
+    <div id="logo"><img style="width: 30em;" src='/../assets/images/Logop.png'></div>
+    <div id="subtitle">A formula for a brand's successful strategic path within the luxury multiverse.</div>
+<mat-accordion>
+    <mat-expansion-panel  style="background-color: #E0E7ED;">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                Brand Name
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div style="background-color: #E0E7ED; height: 600px;">
+
+            <div id="wrapper">
+        <div style="margin-top: 100px; color: black; font-size: 48px; font-family: 'Hatton Medium';">INPUT 1</div>
+        <div style="margin-top:50px;color: black; font-size: 48px; font-family: 'Public sans'; font-weight: lighter;">Brand name:</div>
+        <input placeholder="Type your answer here..." type="text">
+        <div id="line1">
+            <img style="width:100%; padding-right: 100px; " src='/../assets/images/linep.png'>
+          </div>
+          <div style="margin-left: -100px; align-items: center; margin-bottom: 400px;">
+            <a style="display:flex; flex-direction: row; margin-top:0px;color:#6667AB; font-size: 40px; font-style:'Hatton Semibold'" href="/gt2-component">  <span style="margin-left: 10%; margin-top:0px;color:#6667AB; font-size: 40px; font-style:'Hatton Semibold'">OK
+              <img src='/../assets/images/Feather2.png'></span></a>
+          </div>
+        </div>
+        </div>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel style="background-color: #E0E7ED;">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                Main product category
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div>
+
+
+            <div id="wrapper">
+        <div style="margin-top: 100px; color: black; font-size: 48px; font-family: 'Hatton Medium';">INPUT 2</div>
+        <div style="color: black; font-size: 48px; margin-top: 50px; margin-bottom:30px; font-family: 'Public sans'; font-weight: lighter;">Main product category:</div>
+        <div class = "btn-group-vertical">
+          <div><button type = "button" class = "btn btn-default">Foods, Wine & Spirits</button></div>  
+        
+          <div>  <button type = "button" class = "btn btn-default">Personal Goods (Fashion, Accessories, Luggage)</button></div>
+            <div> <button type = "button" class = "btn btn-default">Watches & Jewelry</button></div>
+                <div> <button type = "button" class = "btn btn-default">Beauty</button></div>
+                    <div> <button type = "button" class = "btn btn-default">Experiential</button></div>
+                        <div> <button type = "button" class = "btn btn-default">Homeware</button></div>
+                            <div> <button type = "button" class = "btn btn-default"> Arts (Physical and Digital)</button></div>
+            <div> <button type = "button" class = "btn btn-default"> Personal Toys (Cars, Yachts, Motorcycles)</button></div>
+                <div> <button style="margin-bottom: 200px;" type = "button" class = "btn btn-default">Estates</button> </div>
+          
+         </div>
+         </div>
+         </div>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel style="background-color: #E0E7ED;">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                Your core product
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div>
+            <div id="wrapper">
+              <div style="margin-top: 50px; color: black; font-size: 48px; font-family: 'Hatton Medium';">INPUT 3</div>
+              <div
+                style="line-height:50px;margin-top: 100px;color: black; font-size: 48px; margin-bottom:30px; font-family: 'Public sans'; font-weight: lighter;">
+                Personal Goods - what is your core product:</div>
+              <div class="btn-group-vertical">
+                <div><button type="button" class="btn btn-default">Apparel</button></div>
+                <div> <button type="button" class="btn btn-default">Bags</button></div>
+                <div> <button type="button" class="btn btn-default">Shoes</button></div>
+                <div> <button style="margin-bottom: 200px;" type="button" class="btn btn-default">Accessories</button></div>
+        
+              </div>
+        
+            </div>
+            </div>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel style="background-color: #E0E7ED;">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                Average Price Point (range)
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div>
+            <div id="wrapper">
+        <div style="margin-top: 50px; color: black; font-size: 48px; font-family: 'Hatton Medium';">INPUT 4</div>
+        <div style="margin-top: 100px;color: black; font-size: 48px; margin-bottom:30px; font-family: 'Public sans'; font-weight: lighter;">Average Price Point (range):</div>
+        <div class = "btn-group-vertical">
+          <div><button type = "button" class = "btn btn-default">≤ 100</button></div>  
+        
+          <div>  <button type = "button" class = "btn btn-default">100-500</button></div>
+            <div> <button type = "button" class = "btn btn-default">500-1.000</button></div>
+                <div> <button type = "button" class = "btn btn-default">1.000-2.000</button></div>
+                    <div> <button type = "button" class = "btn btn-default">2.000-4.000</button></div>
+                        <div> <button type = "button" class = "btn btn-default">4.000-10.000</button></div>
+                            <div> <button type = "button" class = "btn btn-default">10.000-50.000</button></div>
+            <div> <button type = "button" class = "btn btn-default">50.000-100.000</button></div>
+                <div> <button  type = "button" class = "btn btn-default"> 100.000 - 500.000</button> </div>
+        
+        
+          <div>  <button type = "button" class = "btn btn-default">500.000 - 1.000.000</button></div>
+          <div> <button type = "button" class = "btn btn-default">1.000.000 - 5.000.000</button></div>
+              <div> <button type = "button" class = "btn btn-default">5.000.000 - 20.000.000</button></div>
+                  <div> <button style="margin-bottom: 200px;" type = "button" class = "btn btn-default">≥ 20.000.000</button></div>
+        
+          
+         </div>
+         </div>
+        </div>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                Facebook
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <p>Lalala</p>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                Facebook
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <p>Lalala</p>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                Facebook
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <p>Lalala</p>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                Facebook
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <p>Lalala</p>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                Facebook
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <p>Lalala</p>
+    </mat-expansion-panel>
+
+
+    </mat-accordion> -->
