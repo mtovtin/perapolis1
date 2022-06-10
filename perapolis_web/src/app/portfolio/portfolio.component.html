@@ -1,0 +1,229 @@
+<html style="height: 100%;">
+<header>
+  <nav style="position:absolute; margin-top: -20px; background-color: rgba(0, 0, 0, 1);" class="navbar  navbar-dark">
+    <div>
+
+      <span id="bg" style="position:absolute; right:40px; top:40px" (click)="toggleNavbar()">
+        <img id="menu_icon" src='assets/images/Menu Icon.png'>
+      </span>
+    </div>
+
+    <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }">
+      <ul class="navbar-nav mr-auto">
+
+        <li style="margin-top: 100px;" class="nav-item">
+          <a class="nav-link" href="about-component" style="color: #6667AB;">ABOUT</a>
+          <div class="hor"></div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="gt-component" style="color: #6667AB;">THE GOLDEN THREAD</a>
+          <div class="hor"></div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="services-component" style="color: #6667AB;">SERVICES</a>
+          <div class="hor"></div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio-component" style="color: #6667AB;">PORTFOLIO</a>
+          <div class="hor"></div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="blog-component" style="color: #6667AB;">OUR VIEWPOINT</a>
+          <div class="hor"></div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact-component" style="color: #6667AB;">CONTACT</a>
+        </li>
+        <li class="nav-item other">
+          <a class="nav-link" href="#">FAQ</a>
+          <a class="nav-link" href="#">PRIVACY POLICY</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+
+
+<body [ngClass]="status ? 'blur-on' : 'blur-off'">
+  <div [ngClass]="status ? 'pd' : 'pd-off'">
+    <div style="background-color: #88A8BE;">
+
+      <div id="logo"><a  href="home-component"><img src='assets/images/Logow.png'></a></div>
+
+      <!-- <div id="menu_icon"><img src='/../assets/images/Menu Icon.png'></div> -->
+
+      <div id="contact">contact us</div>
+      <div id="socials">
+        <div>
+          <img src='assets/images/Feather.png'>
+        </div>
+        <div>
+          <img src='assets/images/Feather1.png'>
+        </div>
+        <div>
+          <img src='assets/images/Feather3.png'>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container" style="padding-left: 8%; padding-right:7%; padding-top: 400px; margin-bottom: 100px;">
+      <div class="row" style="text-align: center;">
+        <div class="subtitle col-md-12 col-lg-12 col-xs-12"
+          style=" margin-bottom: 4px;display: inline-block; color: #6667AB; font-size: 26px; font-family: 'Public Sans', sans-serif; ">
+          Industries
+        </div>
+        <div style="line-height: 1.2em; font-family: 'Hatton Medium';color: #E0E7ED; font-size: 50px;  padding-bottom: 20px;"
+          class="txt col-md-12 col-lg-12 col-xs-12">
+          Luxury - Fashion - Lifestyle
+ 
+        </div>
+        <div class="subtitle col-md-12 col-lg-12 col-xs-12"
+          style="line-height: 1.2em; font-family: 'Public Sans', sans-serif; color: #E0E7ED; width: 80%; margin: auto; font-size: 26px; display: inline-block;">
+          Discover our work based on the "Golden Thread" formula.
+        </div>
+
+      </div>
+    </div>
+
+    <div class="pic1">
+      <img id="pic1" alt="" src="assets/images/1.png" />
+    </div>
+      <div id="tx1">
+        <pre><span style="font-family: 'Public Sans', sans-serif; font-size: 20px; color: #E0E7ED;">AVAV</span>
+<span style="font-family: 'Public Sans', sans-serif; font-size: 35px; color: #6667AB;"><a style="text-decoration: none;font-size: 35px; color: #6667AB; " href="posuere-component">Posuere</a></span></pre>
+      </div>
+
+    <div style="clear: left;">
+    </div>
+
+    <div class="pic2">
+      <img id="pic2" alt="" src="assets/images/2.png" />
+    </div>
+      <div class="tx6">
+        <span id="tx2" style="font-family: 'Caudex';font-family: 'Public Sans', sans-serif; font-size: 26px; color: #EBEBFF; ">
+          Strategy. Communications. </span>
+      </div>
+
+    <div style="clear: left;">
+    </div>
+
+    <div style="background-color: #88A8BE; margin-top: 100px; margin-bottom: 230px;" id="line1">
+      <img id="linew" style="width: 45%;" src='assets/images/Frame3.png'>
+    </div>
+
+
+
+
+
+
+    <div class="pic3">
+      <img id="pic3" alt="" src="assets/images/3.png" />
+    </div>
+      <div id="tx3">
+        <pre><span style="font-family: 'Public Sans', sans-serif; font-size: 18px; color: #E0E7ED;">ERMANNO SCERVINO</span>
+ <span style="font-family: 'Public Sans', sans-serif; font-size: 35px; color: #14393F;">Carasipath</span></pre>
+
+    </div>
+    <div style="clear: right;">
+    </div>
+
+    <div class="pic4">
+      <img id="pic4" alt="" src="assets/images/4.png" />
+    </div>
+      <div class="tx5">
+        <span id="tx4"  style="font-family: 'Caudex';font-family: 'Public Sans', sans-serif; font-size: 26px; color: #EBEBFF; ">
+          Communications. </span>
+      </div>
+
+    <div style="clear: right">
+    </div>
+
+    <div style="background-color: #88A8BE;" id="line1; margin-top: 500px; margin-bottom: 230px;">
+      <img id="linew" style="padding-top: 60px ;float: right;width: 45%;" src='assets/images/Frame3.png'>
+    </div>
+
+
+
+    <div
+      style="margin: auto;text-align: center; padding-bottom:200px;margin-top:400px;text-align: center; color: white; font-size: 28px; font-family: 'Public Sans', sans-serif; ">
+      All Projects
+    </div>
+
+  </div>
+  <div style="font-size: 12px; color: white; font-family: 'Public Sans'; text-align: center; padding-bottom: 40px;">© 2022 PERAPOLIS</div>
+</body>
+
+<!-- <div class="pic1 row justify-content-start" style="width: 400px;text-align: center; margin-top: 150px;">
+        <div class="col-md-1 col-lg-1 col-xs-12">
+          <img id='img1' src="/../assets/images/1.png">
+        </div>
+        <div class="col-md-11 col-lg-11 col-xs-12">
+        </div>
+      </div>
+    </div>
+    <div id="tx1" style="margin-top: -150px">
+      <span style="font-family: 'Public Sans', sans-serif; font-size: 18px; color: #E0E7ED; ">AVAVAV</span>
+      <div style="font-family: 'Public Sans', sans-serif; font-size: 35px; color: #6667AB;">Posuere</div>
+    </div>
+    <div class="pic row justify-content-start" style="text-align: center; ">
+      <div class="col-md-1 col-lg-1 col-xs-12">
+        <img src="/../assets/images/2.png">
+      </div>
+    </div>
+    <div id="tx2">
+      <span
+        style="font-family: 'Caudex';font-family: 'Public Sans', sans-serif; font-size: 25px; color: #EBEBFF; ">Strategy.
+        Communications. </span>
+    </div>
+  </div>
+
+
+
+
+
+  
+
+  <div style="background-color: #88A8BE;" id="line1">
+    <img id="linew" style="width: 45%;" src='/../assets/images/Frame3.png'>
+  </div>
+
+
+  <div class="container" style="padding-left: 8%; padding-right:7%; padding-top: 40px; background-color: #88A8BE; padding-bottom: 1200px;">
+    <div class="row" style="background-color: #88A8BE;text-align: center;  ">
+      
+      <div class="pic3 row " style="background-color: #88A8BE;width: 400px;text-align: center; margin-top: 150px;">
+        <div class="col-md-1 col-lg-1 col-xs-12">
+          <img id='img3' src="/../assets/images/3.png">
+        </div>
+        <div class="col-md-11 col-lg-11 col-xs-12">
+        </div>
+      </div>
+    </div>
+    <div id="tx3" style="">
+      <span style="font-family: 'Public Sans', sans-serif; font-size: 18px; color: #E0E7ED; ">ERMANNO SCERVINO</span>
+      <div style="font-family: 'Public Sans', sans-serif; font-size: 35px; color: #14393F;">Carasipath</div>
+    </div>
+    <div class="pic4 row justify-content-start" style="text-align: center; ">
+      <div class="col-md-1 col-lg-1 col-xs-12">
+        <img src="/../assets/images/4.png">
+      </div>
+    </div>
+    <div id="tx4">
+      <span
+        style="font-family: 'Caudex';font-family: 'Public Sans', sans-serif; font-size: 25px; color: #EBEBFF; ">
+        Communications. </span>
+    </div>
+  </div> -->
+<!-- <div style="margin-bottom:500px;text-align: center; display: inline-block; color: white; font-size: 24px; font-family: 'Public Sans', sans-serif; ">
+        All Projects
+      </div> -->
+<!-- </body> -->
+
+<!-- </html> -->

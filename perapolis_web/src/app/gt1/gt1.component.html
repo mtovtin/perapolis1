@@ -1,0 +1,104 @@
+<html style="height: 100%;">
+<header>
+  <nav style="position:absolute; margin-top: -20px; background-color: rgba(0, 0, 0, 1);" class="navbar  navbar-dark">
+    <div>
+
+      <span id="bg" style="position:absolute; right:40px; top:40px" (click)="toggleNavbar()">
+        <img id="menu_icon" src='assets/images/Menu Icon1.png'>
+      </span>
+    </div>
+
+    <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }">
+      <ul class="navbar-nav mr-auto">
+
+        <li style="margin-top: 100px;" class="nav-item">
+          <a class="nav-link" href="about-component" style="color: #6667AB;">ABOUT</a>
+          <div class="hor"></div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="gt-component" style="color: #6667AB;">THE GOLDEN THREAD</a>
+          <div class="hor"></div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="services-component" style="color: #6667AB;">SERVICES</a>
+          <div class="hor"></div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio-component" style="color: #6667AB;">PORTFOLIO</a>
+          <div class="hor"></div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blog-component" style="color: #6667AB;">OUR VIEWPOINT</a>
+          <div class="hor"></div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact-component" style="color: #6667AB;">CONTACT</a>
+        </li>
+        <li class="nav-item other">
+          <a class="nav-link" href="#">FAQ</a>
+          <a class="nav-link" href="#">PRIVACY POLICY</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+
+
+<body [ngClass]="status ? 'blur-on' : 'blur-off'">
+  <div [ngClass]="status ? 'pd' : 'pd-off'">
+  <div style="background-color: #E0E7ED;">
+
+    <div id="logo"><a  href="home-component"><img src='assets/images/Logop.png'></a></div>
+    <div id="subtitle">A formula for a brand's successful strategic path within the luxury multiverse.</div>
+    <!-- <div id="menu_icon"><img src='/../assets/images/Menu Icon.png'></div> -->
+    <div id="st">
+    <div id="wrapper">
+      <div id="inp" style="margin-top: 400px; margin-bottom: 20px; color: black;  font-family: 'Hatton Medium';">INPUT 1</div>
+      <div id="inp1" style="margin-top: -20px;color: black;  font-family: 'Public sans'; font-weight: lighter;">
+        Brand name:</div>
+      <input #bn placeholder="Type your answer here..." [(ngModel)]="txtValue" (ngModelChange)="onTextChange($event)" type="text">
+ 
+    </div>
+    <div id="line1">
+      <img style="width: 80%;" src='assets/images/linep.png'>
+      <div style="color: red; font-size: 26px; font-family: 'Public Sans';">{{st}}</div>
+    </div>
+    <div style="display:flex; flex-direction: row; align-items: center;padding-bottom: 500px;">
+      <a id="l" (click)="goToNext(bn.value)" style="display:flex; flex-direction: row; margin-top:0px;color:#6667AB; font-size: 40px; font-style:'Hatton Semibold';  text-decoration: none;"
+        ><button  style="margin-top:0px;color:#6667AB; font-style:'Hatton Semibold';" id="ok">OK</button> <button  id="ok1"
+        style="margin-top:-2px;color:#6667AB; font-style:'Hatton Semibold'; margin-left: -5px; background-image: url('assets/images/arrowbb.png'); background-repeat: no-repeat;">
+        </button></a>
+    </div>
+    
+    </div>
+    <div id="contact">contact us</div>
+    <div id="socials">
+      <div>
+        <img src='assets/images/Feather.png'>
+      </div>
+      <div>
+        <img src='assets/images/Feather1.png'>
+      </div>
+      <div>
+        <img src='assets/images/Feather3.png'>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div style="font-size: 12px; color: white; font-family: 'Public Sans'; text-align: center; padding-bottom: 40px;">© 2022 PERAPOLIS</div>
+</body>
+
+</html>
+
+
+
+
+<!-- <button  style="margin-top:0px;color:#6667AB; font-style:'Hatton Semibold';" id="ok">OK</button> <button  id="ok1"
+          style="margin-top:5px;color:#6667AB; font-style:'Hatton Semibold'; background-image: url('assets/images/Feather2.png');">
+          </button> -->
