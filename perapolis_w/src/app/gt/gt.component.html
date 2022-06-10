@@ -1,0 +1,136 @@
+<html>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
+    <header>
+        <nav style="position:absolute; margin-top: -20px; background-color: rgba(0, 0, 0, 1);" class="navbar  navbar-dark">
+          <div>
+      
+            <span id="bg" style="position:absolute; right:40px; top:40px" (click)="toggleNavbar()">
+              <img id="menu_icon" src='assets/images/Menu Icon1.png'>
+            </span>
+          </div>
+      
+          <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }">
+            <ul class="navbar-nav mr-auto">
+        
+              <li style="margin-top: 100px;" class="nav-item">
+                <a class="nav-link" href="about-component" style="color: #6667AB;">ABOUT</a>
+                <div class="hor"></div>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link" href="gt-component" style="color: #6667AB;">THE GOLDEN THREAD</a>
+                <div class="hor"></div>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link" href="services-component" style="color: #6667AB;">SERVICES</a>
+                <div class="hor"></div>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio-component" style="color: #6667AB;">PORTFOLIO</a>
+                <div class="hor"></div>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link" href="blog-component" style="color: #6667AB;">OUR VIEWPOINT</a>
+                <div class="hor"></div>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link" href="contact-component" style="color: #6667AB;">CONTACT</a>
+              </li>
+              <li class="nav-item other">
+                <a class="nav-link" href="#">FAQ</a>
+                <a class="nav-link" href="#">PRIVACY POLICY</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      
+    <body [ngClass]="status ? 'blur-on' : 'blur-off'">
+      <div [ngClass]="status ? 'pd' : 'pd-off'">
+    <!-- <video autoplay muted loop id="myVideo">
+            <source src="/../assets/images/video.mp4" type="video/mp4">
+          </video> -->
+
+
+
+
+
+
+
+
+          <div  style="background-color: #E0E7ED;">
+            <div  id="logo"><a  href="home-component"><img src='assets/images/Logob.png'></a></div>
+
+            <div style="padding-top: 400px;"  id="gt">The Golden Thread</div>
+            <div class="col-12 subtitleLight">
+                A formula for a brand's successful strategic path within the luxury multiverse.
+            </div>
+            <div style="margin-top: 150px; margin-left: 12%;">
+              <div style="color: #6667AB; margin-bottom:60px" id="text2">Do you work for or own a luxury brand where the product is outstanding, the storytelling is compelling, and the team is relentlessly working yet you aren't getting the results you want?</div>
+            <div id="text2">Try The Golden Thread formula to discover your own strategic path through the intricacies of modern luxury. Perapolis created a one-of-a-kind framework. The Golden Thread is an AI algorithm that draws unique conclusions based on your input, the framework, and data from the web.</div>
+            </div>
+            <!-- <div id="menu_icon"><img src='/../assets/images/Menu Icon.png'></div> -->
+            <div  style="color: #14393F; text-align: left; font-family: 'Hatton Medium';"  class="wrapper">
+              <div class="r" ></div>
+              <span class="rem" style=" display: inline-block;  width: 240px;">Target Profile</span>
+         
+                <span class="d" style="text-align: left; margin-left: -30px;">       <img  style=" text-align: left;" src='assets/images/Featherpp.png'></span>
+                <div class="r" ></div>
+                <span class="rem" style="display: inline-block;   width: 240px;">POD</span>
+                <span class="d"  style="text-align: left; margin-left: -30px;">       <img  style=" text-align: left;" src='assets/images/Featherpp.png'></span>
+                <div class="r" ></div>
+                <span class="rem" style="display: inline-block;  width: 240px;">Market Segments</span>
+            </div>
+       
+
+            <div class="wrapper1">
+              <div class="r a" style="text-align: center; line-height: 1.2em; ">Target Profile</div>
+                <span class="k" style="
+               ">In order for a luxury brand to be successful, it must satisfy the client's catalytic deep need with the brand's point of strength.</span>
+                <img style="width: 1.5em;">
+                <div class="r" >POD</div>
+                <span class="k" style="
+               ">A detailed breakdown of a specific type of customer you're trying to reach with your business strategies.</span>
+                <img style="width: 1.5em;">
+                <div class="r" style="text-align: center; line-height: 1.2em; ">Market Segments</div>
+                <span class="k" style="
+                ">The market segment is dividing a broad business market, into sub-groups of consumers based on some type of shared characteristics.</span>
+
+            </div>
+
+            <div style="margin-top: 300px; margin-left: 12%;">
+                <div  style="font-size: 24px; color:#14393F; font-family: 'Public sans'; font-weight: bold;">
+                 <a style="color:#14393F; text-decoration: none; font-size: 45px; font-family: 'Hatton Medium';" href="gt1-component"> The Golden Thread</a>  
+                     <img style="margin-top: -14px; padding-left: -60px;" src='assets/images/arrowbb.png'>
+                   </div>
+            </div>
+
+            <div style=" padding-top: 250px;" id="line1">
+
+              </div>
+              <div id="contact">contact us</div>
+              <div id="socials">
+                <div>
+                  <img src='assets/images/Feather.png'>
+                </div>
+                <div>
+                  <img src='assets/images/Feather1.png'>
+                </div>
+                <div>
+                  <img src='assets/images/Feather3.png'>
+                </div>
+              </div>
+            
+        
+          </div>
+        
+</div>
+<div style="font-size: 12px; margin-top: -80px; color: white; font-family: 'Public Sans'; text-align: center; padding-bottom: 40px;">© 2022 PERAPOLIS</div>
+    </body>
+</html>

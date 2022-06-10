@@ -1,0 +1,346 @@
+<!-- 
+<p>brand name: {{brandName}}</p>
+<p>category: {{category}}</p>
+<p>goods: {{goods}}</p>
+<p>price: {{price}}</p>
+<p>clients: {{clients}}</p>
+<p>age: {{age}}</p>
+<p>communication: {{communication}}</p>
+<p>proposition: {{proposition}}</p>
+<p>reason: {{reason}}</p>
+
+<div>Results</div>
+<p>M.S.: {{c}}</p>
+<p>TP:</p>
+<p>{{str}} - {{str3}}</p>
+<p>{{str2}} - {{str4}}</p>
+<p>POD: {{h}}</p>
+
+
+
+ -->
+
+
+
+
+
+
+
+
+<head>
+  <script src="//script.sheetsu.com/"></script>
+</head>
+
+<html style="height: 100%;">
+<header>
+  <nav style="position:absolute; margin-top: -20px; background-color: rgba(0, 0, 0, 1);"
+    class="navbar  navbar-fixed-top navbar-dark">
+    <div>
+
+      <span id="bg" style="position:absolute; right:40px; top:40px" (click)="toggleNavbar()">
+        <img id="menu_icon" src='assets/images/Menu Icon1.png'>
+      </span>
+    </div>
+
+    <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }">
+      <ul class="navbar-nav mr-auto">
+
+        <li style="margin-top: 100px;" class="nav-item">
+          <a class="nav-link" href="about-component" style="color: #6667AB;">ABOUT</a>
+          <div class="hor"></div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="gt-component" style="color: #6667AB;">THE GOLDEN THREAD</a>
+          <div class="hor"></div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="services-component" style="color: #6667AB;">SERVICES</a>
+          <div class="hor"></div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio-component" style="color: #6667AB;">PORTFOLIO</a>
+          <div class="hor"></div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="blog-component" style="color: #6667AB;">OUR VIEWPOINT</a>
+          <div class="hor"></div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact-component" style="color: #6667AB;">CONTACT</a>
+        </li>
+        <li class="nav-item other">
+          <a class="nav-link" href="#">FAQ</a>
+          <a class="nav-link" href="#">PRIVACY POLICY</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+
+
+<body [ngClass]="status ? 'blur-on' : 'blur-off'">
+  <div [ngClass]="status ? 'pd' : 'pd-off'">
+    <div style="background-color: #6667AB;">
+
+      <div id="logo"><a  href="home-component"><img src='assets/images/Logop.png'></a></div>
+
+      <!-- <div id="menu_icon"><img src='/../assets/images/Menu Icon.png'></div> -->
+
+
+      <div id="contact">contact us</div>
+      <div id="socials">
+        <div>
+          <img src='assets/images/Feather.png'>
+        </div>
+        <div>
+          <img src='assets/images/Feather1.png'>
+        </div>
+        <div>
+          <img src='assets/images/Feather3.png'>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container" style="padding-left: 7%; padding-right:7%;text-align: center; padding-top: 200px;">
+      <div style="color:#14393F; " id="gt">Your Golden Thread</div>
+      <div style="text-align: center; font-family: 'Public sans';" class="col-12 subtitleLight">
+        The Golden Thread is a success formula for your luxury brand. Below you will find the results of our algorithm.
+        Follow the thread to understand your strategic path in the luxury multiverse. </div>
+
+
+
+      <div style=" text-align: left; width: 36%; margin: auto; margin-top: 200px;">
+        <div class="y">
+          Target Profile
+        </div>
+        <div class="x">
+          A target profile is a detailed breakdown of a specific type of customer you're trying to reach with your
+          business strategies.
+
+        </div>
+      </div>
+
+      <div id='k'>
+
+        <div style="position: relative;  ">
+          <div style="position: relative; left: 50%; transform: translateX(-50%); ">
+            <!-- <div id='one'>
+              <div class='st'>
+                Target Profile
+              </div>
+              <div
+                style="align-items: center; margin-top: auto; margin-bottom:auto; margin-left: 20px;margin-right: 20px;">
+                <img id="lw" style="height: 30px; height: 13px; " src="assets/images/lw.png">
+              </div>
+
+              <div style="width: 40vw;" class='txt1'>
+                A target profile is a detailed breakdown of a specific type of customer you're trying to reach with your
+                business strategies.
+              </div>
+            </div> -->
+            <div style="margin-top: 30px;">
+              <img style=" width: 70%;" src="assets/images/wow.png">
+            </div>
+
+            <!-- <div id='two'>
+
+              <div class='st'>
+                POD
+              </div>
+              <div class='lh' style="padding-bottom: 10px;">
+                <img src="assets/images/lh.png">
+              </div>
+
+              <div style=" text-align: left;" class='txt1'>
+                The magic ingredient is the point of differentiation. POD is a unique concept developed by Perapolis
+                that
+                argues
+                that in order for a luxury brand to be successful, it must satisfy the client's catalytic deep need with
+                the
+                brand's point of strength.
+              </div>
+            </div> -->
+
+
+
+
+            <!-- <div id='three'>
+
+              <div class='st'>
+                Market Segment
+              </div>
+              <div class='lh' style="padding-bottom: 10px;">
+                <img src="assets/images/lh.png">
+              </div>
+
+              <div style=" text-align: left;" class='txt1'>
+                The market segment is dividing a broad business market, into sub-groups of consumers based on some type
+                of
+                shared characteristics. Market segmentation builds a subset of a market.
+              </div>
+            </div> -->
+
+
+          </div>
+        </div>
+
+        <!-- <div id='tr'
+          style="font-family: 'Inter'; text-align: left; position: relative; top: -500px; margin-bottom: 100px; margin-left: 7%;">
+
+          <div style="margin-bottom: 20px;"> A target profile is a detailed breakdown of a specific type of customer
+            you're trying to reach with your
+            business strategies.</div>
+          <div style="margin-bottom: 20px;"> The magic ingredient is the point of differentiation. POD is a unique
+            concept developed by Perapolis that argues
+            that in order for a luxury brand to be successful, it must satisfy the client's catalytic deep need with the
+            brand's point of strength.</div>
+          <div> The market segment is dividing a broad business market, into sub-groups of consumers based on some type
+            of shared characteristics. Market segmentation builds a subset of a market.
+          </div>
+        </div>
+
+ -->
+
+
+
+
+        <div id="b" style="position: relative;left: -30%; text-align: left; width: 36%; margin: auto;">
+          <div class="y">
+            POD
+          </div>
+          <div class="x">
+            The magic ingredient is the point of differentiation. POD is a unique concept developed by Perapolis that
+            argues that in order for a luxury brand to be successful, it must satisfy the client's catalytic deep need
+            with the brand's point of strength.
+          </div>
+        </div>
+
+        <div id="c" style="position: relative; left: 30%;  text-align: left; width: 36%; margin: auto; ">
+          <div class="y">
+            Market Segment
+          </div>
+          <div class="x">
+            The market segment is dividing a broad business market, into sub-groups of consumers based on some type of
+            shared characteristics. Market segmentation builds a subset of a market. </div>
+        </div>
+
+
+
+
+        <div style="  padding-bottom: -300px;">
+          <div id="pri">
+            <div style=" margin-bottom: 200px;" class="n row align-items-center">
+
+              <div class="subtitle col-md-4 col-lg-4 col-xs-12"
+                style=" display: inline-block; font-family: 'Hatton Medium';  ">Target
+
+                Profile
+              </div>
+              <div class="txt col-md-8 col-lg-8 col-xs-12">
+                {{str}}
+                <div class="desc" style="padding-top: 10px;">
+                  {{t}}
+                </div>
+
+                <div style="margin-bottom: 40px;"></div>
+                {{str2}}
+                <div class="desc " style="padding-top: 10px;">
+                  {{t1}}
+                </div>
+                <!-- {{str}} - {{str3}}
+            {{str2}} - {{str4}} -->
+              </div>
+            </div>
+
+            <div class="n row align-items-center" style=" margin-bottom: 200px;">
+              <div class="subtitle col-md-4 col-lg-4 col-xs-12" style=" font-family: 'Hatton Medium'; ">
+                POD
+              </div>
+              <div class="txt col-md-8 col-lg-8 col-xs-12">
+                {{a}}
+                <div class="desc" style="padding-top: 10px;">
+                  {{h}}
+                </div>
+
+              </div>
+            </div>
+
+
+            <div class="n row align-items-center" style="margin-bottom:200px;  font-family: 'Hatton Medium';">
+              <div class="subtitle col-md-4 col-lg-4 col-xs-12">
+                Market
+
+                Segment
+              </div>
+              <div class="txt col-md-8 col-lg-8 col-xs-12" style="padding-bottom: 100px;">
+                {{c}}
+                <div class="desc" style="padding-top: 10px;">
+                  {{r}}
+                </div>
+                <!-- {{c}} -->
+              </div>
+            </div>
+          </div>
+          <div class="row" style="margin-bottom:40px;">
+
+            <div (click)="captureScreen()"
+              style="text-align: center; font-size: 22px; font-family: 'Public Sans'; color: #88A8BE;"
+              class="txt col-md-12 col-lg-12 col-xs-12">  <a style="text-align: center; font-size: 22px; font-family: 'Public Sans'; color: #88A8BE; text-decoration: none;" href="assets/images/Golden Thread Report.pdf" download="your golden thread">
+              Download the demo version of the report <img style="margin-bottom: 10px; " src='assets/images/down.png'></a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4 col-lg-4 col-xs-12">
+            </div>
+            <div class="col-md-8 col-lg-8 col-xs-12">
+
+            </div>
+
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <div id='demo'
+          style="margin-top: 100px; padding-bottom: 60px; font-style: 10px; font-family: 'Inter'; color: #14393F; text-align: center;">
+          Please keep in mind that this is a demo version of the website that excludes pricing specifications.</div>
+
+      </div>
+      <div style="font-size: 12px; color: white; font-family: 'Public Sans'; text-align: center; padding-bottom: 40px;">
+        © 2022 PERAPOLIS</div>
+
+
+
+    </div>
+  </div>
+</body>
+<script>
+  function successFunc(data) {
+    console.log(data);
+  }
+
+  // Adds single row to spreadsheet
+  var data = {
+    id: 5,
+    name: "John",
+    score: 200
+  };
+  Sheetsu.write("https://sheetsu.com/apis/v1.0su/1c93858d5fd3", data, {}, successFunc);
+
+</script>
+
+</html>

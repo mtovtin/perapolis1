@@ -1,0 +1,200 @@
+<html style="height: 100%;">
+<header>
+  <nav style="position: absolute;margin-top: -20px; background-color: rgba(0, 0, 0, 1);" class="navbar  navbar-dark fixed-top">
+    <div>
+
+      <span id="bg" style="position: absolute; right:40px; top:40px" (click)="toggleNavbar()">
+        <img id="menu_icon" src='assets/images/Menu Icon.png'>
+      </span>
+    </div>
+
+    <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }">
+      <ul class="navbar-nav mr-auto">
+    
+        <li style="margin-top: 100px;" class="nav-item">
+          <a class="nav-link" href="about-component" style="color: #6667AB;">ABOUT</a>
+          <div class="hor"></div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="gt-component" style="color: #6667AB;">THE GOLDEN THREAD</a>
+          <div class="hor"></div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="services-component" style="color: #6667AB;">SERVICES</a>
+          <div class="hor"></div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio-component" style="color: #6667AB;">PORTFOLIO</a>
+          <div class="hor"></div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="blog-component" style="color: #6667AB;">OUR VIEWPOINT</a>
+          <div class="hor"></div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact-component" style="color: #6667AB;">CONTACT</a>
+        </li>
+        <li class="nav-item other">
+          <a class="nav-link" href="#">FAQ</a>
+          <a class="nav-link" href="#">PRIVACY POLICY</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+
+
+<body [ngClass]="status ? 'blur-on' : 'blur-off'">
+  <div [ngClass]="status ? 'pd' : 'pd-off'">
+  <div style="background-color: #14393F;">
+
+    <div id="logo"><a  href="home-component"><img src='assets/images/Logow.png'></a></div>
+
+    <!-- <div id="menu_icon"><img src='/../assets/images/Menu Icon.png'></div> -->
+
+    <div id="contact">contact us</div>
+    <div id="socials">
+      <div>
+        <img src='assets/images/Feather.png'>
+      </div>
+      <div>
+        <img src='assets/images/Feather1.png'>
+      </div>
+      <div>
+        <img src='assets/images/Feather3.png'>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container" style="padding-left: 4%; padding-right: 4%; padding-top: 400px;">
+    <div class="row">
+<div class="title col-12">
+       <span class="g"> Strategy </span> <span class="ris">-</span>  <span class="g"> Creative </span> <span class="ris"> - </span>  <span class="g" style="margin-bottom: 50px;">Communications</span>
+    </div>
+    <div class="col-12 subtitleLight">
+      Our services are unique and tailorable to your particular requirements. Contact us to receive more information.
+    </div>
+    </div>
+    <div class="row" style="margin-bottom: 40px;">
+      <div class="subtitle col-md-6 col-lg-6 col-xs-12" style=" display: inline-block;">
+        Strategy
+      </div>
+      <div class="txt col-md-6 col-lg-6 col-xs-12">
+     <pre>  
+INSIGHTS
+Consumer Insights
+Cultural & Market Trends
+Competitor Analysis
+
+CONSULTING
+Brand Vision
+Brand Positioning
+Brand Architecture
+Brand & Product Launch
+Partnerships
+Retail Strategy
+
+PLANNING
+Campaign Strategy
+Channel & Media Strategy
+Paid Media Strategy
+Consumer Journey</pre> 
+      </div>
+    </div>
+    <div class="row" style="margin-bottom: 80px;">
+        <div class="col-md-6 col-lg-6 col-xs-12">
+        </div>
+        <div class="col-md-6 col-lg-6 col-xs-12" style="font-size: 22px; color:#88A8BE">
+          <a style=" font-size: 22px; color:#88A8BE; text-decoration: none;" href="gt-component"> The Golden Thread
+            <img src='assets/images/arrow.png'>
+          </a>
+        </div>
+      </div>
+    <div class="row" style="margin-bottom: 40px;">
+      <div class="subtitle col-md-6 col-lg-6 col-xs-12">
+        Creative
+      </div>
+      <div class="txt col-md-6 col-lg-6 col-xs-12">
+    <pre>
+        
+CREATIVE STRATEGY
+Visual Identity
+Creative Direction
+Tone of Voice
+Content Development
+Creative Collaborations
+Influencer Marketing
+    
+EXPERIENCE STRATEGY
+Concept Development
+Creative Direction
+Consumer Activations
+Cultural Programming
+    </pre>
+      </div>
+    </div>
+
+    <div class="row" style="margin-bottom: 100px; margin-top: -20px">
+      <div class="col-md-6 col-lg-6 col-xs-12">
+      </div>
+      <div class="col-md-6 col-lg-6 col-xs-12" style="font-size: 22px; color:#88A8BE">
+        <a style=" font-size: 22px; color:#88A8BE; text-decoration: none;" href="portfolio-component"> Discover our portfolio
+        <img src='assets/images/arrow.png'>
+      </a>
+      </div>
+    </div>
+
+    <div class="row" >
+      <div style="margin-top: -20px; margin-bottom: 40px;" class="subtitle col-md-6 col-lg-6 col-xs-12">
+        Communications
+      </div>
+      <div class="txt col-md-6 col-lg-6 col-xs-12">
+<pre>
+EVENT PRODUCTION
+Creative Design
+Experience Flow
+Creative Guidelines
+Production & Logistics
+Entertainment
+
+COMMUNICATIONS STRATEGY
+Brand Messaging & Storytelling
+Reputation Management
+Media Strategy
+Media Partnerships
+Media Buying
+
+MEDIA RELATIONS
+Brand Features
+Product Placements
+International Showrooms
+Sample Management
+</pre>
+      </div>
+    </div>
+    <div class="row" style="margin-top: -60px;">
+        <div class="col-md-6 col-lg-6 col-xs-12">
+        </div>
+        <div class="col-md-6 col-lg-6 col-xs-12" style="font-size: 22px; color:#88A8BE">
+          <a style=" font-size: 22px; color:#88A8BE; text-decoration: none;" href="portfolio-component"> Discover our portfolio
+            <img src='assets/images/arrow.png'>
+          </a>
+          <div style="margin-bottom: 200px;"></div>
+        </div>
+      </div>
+  </div>
+ 
+</div>
+<div style="font-size: 12px; color: white; font-family: 'Public Sans'; text-align: center; padding-bottom: 40px;">© 2022 PERAPOLIS</div>
+</body>
+
+</html>
+
+

@@ -1,0 +1,104 @@
+<html style="height: 100%;">
+<header>
+  <nav style="position:absolute; margin-top: -20px; background-color: rgba(0, 0, 0, 1);" class="navbar  navbar-dark">
+    <div>
+
+      <span id="bg" style="position:absolute; right:40px; top:40px" (click)="toggleNavbar()">
+        <img id="menu_icon" src='assets/images/Menu Icon1.png'>
+      </span>
+    </div>
+
+    <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }">
+      <ul class="navbar-nav mr-auto">
+
+        <li style="margin-top: 100px;" class="nav-item">
+          <a class="nav-link" href="about-component" style="color: #6667AB;">ABOUT</a>
+          <div class="hor"></div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="gt-component" style="color: #6667AB;">THE GOLDEN THREAD</a>
+          <div class="hor"></div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="services-component" style="color: #6667AB;">SERVICES</a>
+          <div class="hor"></div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio-component" style="color: #6667AB;">PORTFOLIO</a>
+          <div class="hor"></div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="blog-component" style="color: #6667AB;">OUR VIEWPOINT</a>
+          <div class="hor"></div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact-component" style="color: #6667AB;">CONTACT</a>
+        </li>
+        <li class="nav-item other">
+          <a class="nav-link" href="#">FAQ</a>
+          <a class="nav-link" href="#">PRIVACY POLICY</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+
+
+<body [ngClass]="status ? 'blur-on' : 'blur-off'">
+  <div [ngClass]="status ? 'pd' : 'pd-off'">
+  <div style="background-color: #E0E7ED;">
+    <div id="logo"><a  href="home-component"><img src='assets/images/Logop.png'></a></div>
+    <div id="subtitle">A formula for a brand's successful strategic path within the luxury multiverse.</div>
+    <!-- <div id="menu_icon"><img src='/../assets/images/Menu Icon.png'></div> -->
+  <div id="st">
+    <div id="wrapper">
+      <div id="inp" style="margin-top: 200px; margin-bottom: 20px; color: black;  font-family: 'Hatton Medium';">INPUT 9</div>
+      <div id="inp1"
+        style="margin-top: -20px;color: black;  font-family: 'Public sans'; font-weight: lighter; ">
+        What is your client's reason to purchase?</div>
+        <div id="ka" style="font-weight: 200;  font-size: 22px; ">
+        <div class="inp2" style="margin-top:-5px;"><b>Prestige</b> - a need for an upwards hierarchic feeling, acknowledgement;</div>
+        <div  class="inp2" ><b>Return on the investment</b> - seeking the best benefit to price ratio, finding a qualitative product with a good price;</div>
+        <div  class="inp2" ><b>For a greater cause</b> - affiliation for a deeper purpose, a community united mission;</div>
+        <div  class="inp2" ><b>Exclusive ownership</b> - craving pleasure and deep enjoyment from life;</div>
+        <div  class="inp2" ><b>Product iconicity</b> - a need for celebrating one's accomplishments through product symbols widely recognizable to the public;</div>
+        <div  class="inp2"  style="margin-bottom:30px;"><b>Niche knowledge</b> - a need for cryptic messages, profound meanings, comprehension of concepts.</div>
+      </div>
+        <div class="btn-group-vertical">
+        <div><button (click)="goToNext('Prestige')" type="button" class="btn btn-default">Prestige</button></div>
+        <div> <button (click)="goToNext('Return on Investment')" type="button" class="btn btn-default">Return on investment</button></div>
+        <div><button (click)="goToNext('For a greater cause')" type="button" class="btn btn-default">For a greater cause</button></div>
+        <div> <button (click)="goToNext('Exclusive ownership')" type="button" class="btn btn-default">Exclusive ownership</button></div>
+        <div><button (click)="goToNext('Product iconicity')" type="button" class="btn btn-default">Product iconicity</button></div>
+        <div> <button (click)="goToNext('Niche knowledge')" style="margin-bottom: 200px;" type="button" class="btn btn-default">Niche knowledge</button></div>
+
+      </div>
+      </div>
+
+    </div>
+
+    <div id="contact">contact us</div>
+    <div id="socials">
+      <div>
+        <img src='assets/images/Feather.png'>
+      </div>
+      <div>
+        <img src='assets/images/Feather1.png'>
+      </div>
+      <div>
+        <img src='assets/images/Feather3.png'>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div style="font-size: 12px; color: white; font-family: 'Public Sans'; text-align: center; padding-bottom: 40px;">© 2022 PERAPOLIS</div>
+</body>
+
+</html>
